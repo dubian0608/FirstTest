@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		0F1F038E24AF47EC00BF6D19 /* YXReplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1F038C24AF47EC00BF6D19 /* YXReplayManager.m */; };
 		0F8E84F42466B443008F4A30 /* music1931.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F8E84F32466B443008F4A30 /* music1931.mp3 */; };
-		0FA583B12480A4F400BE535D /* thunderboltdynamic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA583B02480A4F400BE535D /* thunderboltdynamic.framework */; };
-		0FA583B22480A4F400BE535D /* thunderboltdynamic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA583B02480A4F400BE535D /* thunderboltdynamic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0FA583B52480A4F800BE535D /* libthunderbolt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA583B42480A4F800BE535D /* libthunderbolt.a */; };
 		0FC3C46524482CC2005150E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC3C46424482CC2005150E8 /* AppDelegate.swift */; };
 		0FC3C46C24482CC2005150E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC3C46A24482CC2005150E8 /* Main.storyboard */; };
 		0FC3C46E24482CC6005150E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC3C46D24482CC6005150E8 /* Assets.xcassets */; };
@@ -21,20 +18,6 @@
 		0FC3C47D24483700005150E8 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC3C47C24483700005150E8 /* RoomViewController.swift */; };
 		D8BE7AFEA39D093DCF8B0BA4 /* libPods-FirstTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E58D0D7D9703F19F30DADC /* libPods-FirstTest.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		0FA583B32480A4F400BE535D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0FA583B22480A4F400BE535D /* thunderboltdynamic.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F1F038C24AF47EC00BF6D19 /* YXReplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXReplayManager.m; sourceTree = "<group>"; };
@@ -62,8 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FA583B52480A4F800BE535D /* libthunderbolt.a in Frameworks */,
-				0FA583B12480A4F400BE535D /* thunderboltdynamic.framework in Frameworks */,
 				D8BE7AFEA39D093DCF8B0BA4 /* libPods-FirstTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +120,6 @@
 				0FC3C45E24482CC2005150E8 /* Frameworks */,
 				0FC3C45F24482CC2005150E8 /* Resources */,
 				9C5F8293D30553E83B8751F3 /* [CP] Copy Pods Resources */,
-				0FA583B32480A4F400BE535D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

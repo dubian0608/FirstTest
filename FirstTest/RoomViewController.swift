@@ -9,7 +9,6 @@
 import UIKit
 import Foundation
 import ReplayKit
-//import AliyunPlayer
 
 class RoomViewController: UIViewController {
     @IBOutlet weak var localView: UIView!
@@ -25,15 +24,9 @@ class RoomViewController: UIViewController {
     lazy var screenRecord: YXReplayManager = {
         return YXReplayManager()
     }()
-//    lazy var record: RPScreenRecorder = {
-//        return RPScreenRecorder.shared()
-//    }()
-    
-//    var videoSource: Thundercus
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         loadEngine()
     }
     
@@ -56,21 +49,15 @@ class RoomViewController: UIViewController {
             print("Join room failed")
         }
 
-//        mediaEngine.enableLocalVideoCapture(true)
         setLocalView()
-        
-//        mediaEngine.enableLocalVideoCapture(false)
-//        mediaEngine.stopAllRemoteVideoStreams(false)
-//        mediaEngine.stopLocalVideoStream(false)
-//        mediaEngine.stopLocalAudioStream(false)
-        
+
     }
     
     func setAudioPlayer() {
         self.audioFilePlayer = mediaEngine.createAudioFilePlayer()
         audioFilePlayer.setPlayerDelegate(self)
         audioFilePlayer.enablePublish(true)
-//        audioFilePlayer.enableVolumeIndication(true, interval: 500)
+        audioFilePlayer.enableVolumeIndication(true, interval: 500)
         
         guard let path = Bundle.main.path(forResource: "music1931", ofType: "mp3") else { return }
         
@@ -109,23 +96,18 @@ class RoomViewController: UIViewController {
     
     @IBAction func doLeavePressed(_ sender: UIButton) {
         self.leaveRoon()
-//        ThunderEngine.destroy()
         self.navigationController?.popViewController(animated: true)
     }
     
     func leaveRoon() {
-//        mediaEngine.stopLocalVideoStream(true)
         DispatchQueue.global().async {
             self.mediaEngine.stopVideoPreview()
         }
         
-//        mediaEngine.setLocalVideoCanvas(nil)
-//        self.mediaEngine.stopVideoPreview()
+        mediaEngine.setLocalVideoCanvas(nil)
+        self.mediaEngine.stopVideoPreview()
         
         mediaEngine.leaveRoom()
-        
-//        setAudioPlayer()
-//        ThunderEngine.destroy()
     }
 }
 

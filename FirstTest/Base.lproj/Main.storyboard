@@ -94,8 +94,8 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPS-NT-VeY">
-                                <rect key="frame" x="358" y="98" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="364" y="98" width="40" height="30"/>
+                                <state key="normal" title="Leave"/>
                                 <connections>
                                     <action selector="doLeavePressed:" destination="mF5-XX-siN" eventType="touchUpInside" id="Rm1-Fr-t4R"/>
                                 </connections>

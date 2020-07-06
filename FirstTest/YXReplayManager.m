@@ -141,9 +141,7 @@ static RPScreenRecorder *recorder;
             if (error) {  //出错
                 NSLog(@"出错: %@", error);
             } else {  //成功回调
-                
                 if (@available(iOS 10.0, *)) {
-                    
                     /*
                      iOS 10 这里我选择直接保存到相册,不使用 previewViewController 弹出来
                      */
